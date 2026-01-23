@@ -1,0 +1,474 @@
+/* =====================================================
+   SERVICENOW PORTFOLIO - MEDIA QUERIES
+   Responsive Design Breakpoints
+   ===================================================== */
+
+/* =====================================================
+   TABLET & BELOW (max-width: 1200px)
+   ===================================================== */
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  #profile .section__text {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  #profile .section__text__p1,
+  #profile .title {
+    text-align: center;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  #socials-container {
+    justify-content: center;
+  }
+
+  .profile-image-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  section {
+    padding: 5rem 5% 3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* =====================================================
+   SMALL TABLET (max-width: 900px)
+   ===================================================== */
+
+@media screen and (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-text {
+    padding: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.25rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-card {
+    padding: 1.25rem;
+  }
+}
+
+/* =====================================================
+   MOBILE (max-width: 600px)
+   ===================================================== */
+
+@media screen and (max-width: 600px) {
+  /* Navigation */
+  #hamburger-nav {
+    padding: 0.75rem 5%;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  /* Hero Section */
+  #profile {
+    min-height: auto;
+    padding: 6rem 5% 3rem;
+  }
+
+  .profile-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  #profile .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem;
+  }
+
+  .section__text__p3 {
+    font-size: 0.9rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  #socials-container {
+    gap: 0.75rem;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Sections */
+  section {
+    padding: 4rem 5% 2rem;
+  }
+
+  .section__text__p1 {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  /* About Section */
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 1.25rem;
+  }
+
+  .card-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .about-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    padding: 1.25rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  /* Experience Section */
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .skill-category h3 {
+    font-size: 0.9rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-role {
+    font-size: 0.85rem;
+  }
+
+  .project-list li {
+    font-size: 0.85rem;
+  }
+
+  /* Certifications Section */
+  .certifications-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .cert-card {
+    padding: 1.25rem;
+  }
+
+  .cert-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .cert-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .cert-card p {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-info h3 {
+    font-size: 0.8rem;
+  }
+
+  .contact-info a {
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.5rem 5%;
+  }
+
+  .footer-nav .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-nav .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+/* =====================================================
+   EXTRA SMALL MOBILE (max-width: 400px)
+   ===================================================== */
+
+@media screen and (max-width: 400px) {
+  .profile-image-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  #profile .title {
+    font-size: 1.75rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 1rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* =====================================================
+   LARGE SCREENS (min-width: 1600px)
+   ===================================================== */
+
+@media screen and (min-width: 1600px) {
+  section {
+    padding: 8rem 10%;
+  }
+
+  #profile {
+    gap: 6rem;
+  }
+
+  .profile-image-wrapper {
+    width: 320px;
+    height: 320px;
+  }
+
+  #profile .title {
+    font-size: 4.5rem;
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+  }
+
+  .about-text {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    max-width: 1400px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certifications-grid {
+    max-width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-container {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =====================================================
+   REDUCED MOTION
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .profile-image-wrapper {
+    animation: none;
+  }
+}
+
+/* =====================================================
+   HIGH CONTRAST MODE
+   ===================================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary: hsl(160, 60%, 55%);
+    --border: hsl(195, 20%, 30%);
+  }
+
+  .skill-tag,
+  .project-badge {
+    border-width: 2px;
+  }
+
+  a:focus,
+  button:focus {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+
+/* =====================================================
+   PRINT STYLES
+   ===================================================== */
+
+@media print {
+  #desktop-nav,
+  #hamburger-nav,
+  .hero-glow,
+  #socials-container,
+  .btn-container {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0;
+    min-height: auto;
+  }
+
+  .title {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  a {
+    color: black;
+  }
+
+  .project-card,
+  .cert-card,
+  .about-card,
+  .contact-card,
+  .skill-category {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}
